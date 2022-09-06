@@ -1,0 +1,51 @@
+#search-btn,#mobile-menu-list,#menu-btn,#signup-form,#login-form,#forgotpwd-form,#menu-list-stick {
+    display: none;
+}
+
+/* layout settings */
+.main_con {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    padding-bottom: 160px;
+}
+/* end of layout settings */
+
+/* keep navbar sticky at the top */
+.sticky {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* responsivness */
+@media screen and (min-width:1300px) {
+    .carousel-height{
+        height: 440px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #search-btn{
+        display: block;
+    }
+    #search-bar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .services{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+    }
+    #menu-list{
+        display: none;
+    }
+}
