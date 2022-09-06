@@ -39,7 +39,7 @@ class AppController extends Controller
     // product view
     public function product(){
         $title = 'Product name';
-        return view('pages.viewpd',compact('title'));
+        return view('pages.product.viewproduct',compact('title'));
     }
    
 }

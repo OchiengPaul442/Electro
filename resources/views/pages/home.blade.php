@@ -1,14 +1,7 @@
 @extends('index')
 
 @section('content')
-    <div class="w-full relative space-y-16">
-        {{-- @if (Session::has('success'))
-            <span class="text-green-700">{{ Session::get('success') }}</span>
-        @elseif (Session::has('fail'))
-            <span class="text-red-700">{{ Session::get('fail') }}</span>
-        @elseif (Session::has('error'))
-            <span class="text-red-700">{{ Session::get('error') }}</span>
-        @endif --}}
+    <div class="w-full relative space-y-16">      
         <div class="w-full relative">
             {{-- carousel --}}
             @include('components.carousels.homeSlider')
@@ -52,7 +45,7 @@
                 </div>
             </div>
             {{-- products section --}}
-            @include('pages.products')
+            @include('pages.product.productsViews')
         </div>
     </div>
 @endsection
