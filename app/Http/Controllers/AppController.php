@@ -10,13 +10,13 @@ class AppController extends Controller
     public function index()
     {
         $title = 'Electro';
-        return view('pages.home',compact('title'));
+        return view('pages.main.home',compact('title'));
     }
     // about page
     public function about()
     {
         $title = 'About';
-        return view('pages.abouts',compact('title'));
+        return view('pages.main.abouts',compact('title'));
     }
     // Bestseller page
     public function best()
@@ -36,10 +36,15 @@ class AppController extends Controller
         $title = 'Add to Cart';
         return view('pages.product.cart',compact('title'));
     }
-    // product view
+    // product details page
     public function product(){
         $title = 'Product name';
         return view('pages.product.viewproduct',compact('title'));
+    }
+    // verification page
+    public function verify(){
+        $title = 'Verification';
+        return view('pages.main.verification',compact('title'));
     }
    
 }

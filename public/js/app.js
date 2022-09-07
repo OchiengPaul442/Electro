@@ -9,6 +9,8 @@ $(document).ready(function () {
     showHideDiv(".icon1", ".icon2", "#mobile-search-bar");
     // show and hide drawer
     showHideDiv2(".message-btn", ".message-btn", "#drawer-contact");
+    // notification
+    $('.notification_drop').delay(4000).fadeOut(300);
 
     // Auth modal (different form display) section
     function authModal() {
@@ -101,9 +103,11 @@ $(document).ready(function () {
             $(z).show();
         });
     }
+
    
     // function call
     scrollToTop();
     stickyNavbar();
     authModal();
+    getSession();
 });

@@ -13,15 +13,7 @@
     <title>{{ $title }}</title>
 </head>
 
-<body>
-    {{-- error messages --}}
-    {{-- @if (Session::has('success'))
-            <span class="text-green-700">{{ Session::get('success') }}</span>
-        @elseif (Session::has('fail'))
-            <span class="text-red-700">{{ Session::get('fail') }}</span>
-        @elseif (Session::has('error'))
-            <span class="text-red-700">{{ Session::get('error') }}</span>
-        @endif --}}
+<body>   
     <section class="main-con">
         {{-- Navbar section --}}
         @include('layouts.navbar')
@@ -39,9 +31,9 @@
     </section>
 
     {{-- components --}}
-    @include('layouts.components')
+   @include('layouts.components')
     {{-- js links --}}
     @include('layouts.JSlinks')
-</body>
+</body> 
 
 </html>

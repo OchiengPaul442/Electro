@@ -6,18 +6,18 @@
             email</label>
         <input type="email" id="email" name="email"
             class="bg-gray-50 border border-gray-300 text-w-blue text-sm rounded-lg focus:ring-w-orange focus:border-w-orange block w-full p-2.5"
-            placeholder="paul@yahoo.com" value="{{ old('email') }}">
+            placeholder="paul@yahoo.com" @if(Cookie::has('userEmail')) value="{{ Cookie::get('userEmail') }}" @endif>
     </div>
     <div class="mb-6">
         <label for="password" class="block mb-2 text-sm font-semibold text-w-blue">Your
             password</label>
-        <input type="password" id="password" name="password"
+        <input type="password" id="password" name="password" @if(Cookie::has('userPassword')) value="{{ Cookie::get('userPassword') }}" @endif
             class="bg-gray-50 border border-gray-300 text-w-blue text-sm rounded-lg focus:ring-w-orange focus:border-w-orange block w-full p-2.5">
     </div>
     <div class="flex justify-between items-start mb-6">
         <div class="flex items-center">
             <div class="flex items-center h-5">
-                <input id="remember" type="checkbox" value=""
+                <input id="remember" name="rememberMe" type="checkbox" @if(Cookie::has('userEmail')) checked @endif
                     class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-w-orange">
             </div>
             <label for="remember" class="ml-2 text-sm font-semibold text-w-blue">Remember

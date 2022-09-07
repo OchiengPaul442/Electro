@@ -5,4 +5,3 @@
 {{-- flowbite and tw-element js --}}
 <script src="{{ asset('js/flowbite.js') }}"></script>
 <script src="{{ asset('js/index.min.js') }}"></script>
-{{-- product carousel --}}

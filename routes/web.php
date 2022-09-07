@@ -11,6 +11,7 @@ Route::get('cart',[AppController::class,'cart'])->name('cart');
 Route::get('product',[AppController::class,'product'])->name('product');
 Route::get('best',[AppController::class,'best'])->name('best');
 Route::get('special',[AppController::class,'special'])->name('special');
+Route::get('verify',[AppController::class,'verify'])->name('verify');
 
 // Auth Routes
 Route::post('login',[AuthController::class,'loginUser'])->name('loginUser');
